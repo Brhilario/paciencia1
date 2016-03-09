@@ -34,7 +34,7 @@ int main (){
 	preenche_baralho(baralho_paus,'P');
 	sleep(1);
 	preenche_baralho(baralho_espada,'E');
-	//testar na tela, n„o ser· usado
+	//testar na tela, n√£o ser√° usado
 	for (i=0;i<13;i++)
 		printf ("%d de %c ",baralho_ouro[i].valor ,baralho_ouro[i].naipe);
 
@@ -74,7 +74,7 @@ int main (){
 	//pilha de estoque para guardar as cartas que sobraram da montagem da mesa
 	PEstoque = pilha_cria();
 	PEstoque = Pilha_estoque(PEstoque,PBaralho);
-	//cria a lista de descarte que vai guardar as cartas n„o utilizadas no estoque
+	//cria a lista de descarte que vai guardar as cartas n√£o utilizadas no estoque
 	PDescarte = pilha_cria();
 	
 	//cria as pilhas de naipes
@@ -112,7 +112,7 @@ int main (){
 			printf("estoque      \n");
 			carta =  pilha_pop(PEstoque);
 			printf("carta = %d %c %d\n", carta.valor,carta.naipe,carta.flag);
-			//tirando a carta da pilha de descarte e imprimindo somente para testar, n„o ser· usado
+			//tirando a carta da pilha de descarte e imprimindo somente para testar, n√£o ser√° usado
 		//	carta2 =pilha_pop(PDescarte);
 		//	printf("carta descarte = %d %c %d\n", carta2.valor,carta2.naipe,carta2.flag);
 		} else
@@ -156,7 +156,7 @@ int main (){
 		 
 		 } else
 	 	if (escolha = 2){
-	 		printf("escolha o n˙mero, o naipe da carta, a lista que deseja tirar e a lista que deseja inserir (nessa ordem)");
+	 		printf("escolha o n√∫mero, o naipe da carta, a lista que deseja tirar e a lista que deseja inserir (nessa ordem)");
 	 		scanf("%d %c %d %d",&carta2.valor,&carta2.naipe,&escolherLista1,&escolherLista2);
 	 		        listajogada = Inicializar_Lista();
             	   	switch(escolherLista1){
@@ -188,7 +188,7 @@ int main (){
 	 	}
 	 	      		
 
-	} //teste
+	} 
 
 	return 0;
 }
